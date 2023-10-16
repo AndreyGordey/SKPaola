@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Салон красоты "Paola"</title>
+    <!-- <link rel="stylesheet" type="text/css" href="/styles.css"> -->
+    <style>
+        body {
+            background-color: pink;
+            font-size: 24px;
+          }
+          
+          button {
+            margin-top: 20px;
+            background: pink;
+            cursor: pointer;
+          
+          }
+          
+          .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .container2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .container3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+          }
+          .container4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            padding: 5px;
+            border-radius: 8px;
+          
+          }
+          .container5 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+          }
+          
+          
+          a.buttons {
+            width: 150px;
+            height: 44px;
+            text-decoration: none;
+            padding-top: 9px;
+            color: #a675b3;
+            text-align: center;
+            line-height: 20px;
+            display: block;
+            margin: 20px auto;
+            font: normal 17px arial;
+          }
+          
+          a.buttons:not(.active) {
+            box-shadow: inset 0 1px 1px rgba(111, 55, 125, 0.8), inset 0 -1px 0px rgba(63, 59, 113, 0.2), 0 9px 16px 0 rgba(0, 0, 0, 0.3), 0 4px 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px #150a1e;
+            background-image: linear-gradient(#3b2751, #271739);
+            text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 -1px 0 #311d47;
+          }
+          
+          a.buttons:not(.active):hover,
+          a.buttons:not(.active):focus {
+            transition: color 200ms linear, text-shadow 500ms linear;
+            color: #fff;
+            text-shadow: 0 0 21px rgba(223, 206, 228, 0.5), 0 0 10px rgba(223, 206, 228, 0.4), 0 0 2px #2a153c;
+          }
+          a.buttons:not(:hover) {
+              transition: 0.6s;
+          }
+          
+          
+          a, u {
+            text-decoration: none;
+          }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Салон красоты "Paola"</h1>
+        </header>
+    </div>
+    <div class="container2">
+        <section id="services">
+            <h2>Услуги</h2>
+            <ul>
+                <li>Маникюр</li>
+                <li>Педикюр</li>
+                <li>Стрижка</li>
+                <li>Окрашивание волос</li>
+                <li>Макияж</li>
+            </ul>
+        </section>
+    </div>
+    <div class="container3">
+        <a target="_blank" href="https://www.instagram.com/paola_beautysalon"><img
+                src="/1491580635-yumminkysocialmedia26_83102 (1).png" alt=""></a>
+        <a target="_blank" href="https://vk.com/paola_perm"><img src="/vk_icon-icons.com_66681.png" alt=""></a>
+        <a href="+73422280128"><img src="/iconfinder-phone-4341310_120556.png" alt=""></a>
+    </div>
+    <div class="container4">
+        <a class="buttons" target="_blank" href='https://dikidi.ru/ru/profile/salon_krasoty_paola_90349/'>Записаться
+            онлайн</a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container5">
+        <button id="change-color-btn">Grey</button>
+    </div>
+    <script>
+        document.getElementById("change-color-btn").addEventListener("click", function() {
+            var body = document.querySelector("body");
+            if (body.style.backgroundColor === "pink") {
+              body.style.backgroundColor = "gray";
+            } else {
+              body.style.backgroundColor = "pink";
+            }
+          });
+    </script>
+
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
